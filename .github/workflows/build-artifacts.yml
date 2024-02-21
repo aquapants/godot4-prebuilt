@@ -210,7 +210,7 @@ jobs:
       - name: "Generate GDExtension API JSON"
         working-directory: output
         run: |
-          $GODOT4_BIN --headless --dump-extension-api
+          /home/runner/work/_temp/godot_bin/Godot_v4.3-dev3_macos.universal --headless --dump-extension-api
           echo "Output directory:"
           ls -la
 
