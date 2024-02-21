@@ -201,7 +201,7 @@ jobs:
       - name: "Download Godot ${{ env.GODOT4_UPSTREAM_VER }}"
         # for gdnative: wget --no-verbose "https://downloads.tuxfamily.org/godotengine/$filePath/Godot_v${{ inputs.godot_ver }}_linux_headless.64.zip" -O /tmp/godot.zip
         run: |          
-          wget --no-verbose "https://downloads.tuxfamily.org/godotengine/$GODOT4_FILE_URL" -O ${{ runner.temp }}/godot.zip || {
+          wget --no-verbose "https://downloads.tuxfamily.org/godotengine/4.3/dev3/Godot_v4.3-dev3_macos.universal.zip" -O ${{ runner.temp }}/godot.zip || {
             echo "::error::Godot version '$GODOT4_UPSTREAM_VER' not available online."
             exit 1
           }
