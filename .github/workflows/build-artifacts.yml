@@ -15,6 +15,9 @@ defaults:
   run:
     shell: bash
 
+permissions:
+  contents: write
+
 # Environment variables used in this workflow:
 # * GODOT4_VER:          Short Godot version name, coming from workflow input ("4.0.1", "4.1-rc1", ...)
 # * GODOT4_UPSTREAM_VER: Godot version as used in URLs and filenames ("4.0.1-stable", "4.1-rc1", ...)
