@@ -211,7 +211,7 @@ jobs:
         working-directory: output
         run: |
           ls -la "$GODOT4_DIR"
-          /home/runner/work/_temp/godot_bin/Godot_v4.3-dev3_macos.universal --headless --dump-extension-api
+          open /home/runner/work/_temp/godot_bin/Godot.app --args --headless --dump-extension-api
           echo "Output directory:"
           ls -la
 
